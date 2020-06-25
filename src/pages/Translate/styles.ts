@@ -4,12 +4,6 @@ interface StyledNumbers {
 	readonly styled: Boolean;
 }
 
-export const MainWrapper = styled.main`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-`;
-
 export const PageTitle = styled.h1`
 	padding: 20px;
 `;
@@ -17,7 +11,7 @@ export const PageTitle = styled.h1`
 export const Container = styled.div`
 	width: 100%;
 	max-width: 48rem;
-	top: 50%;
+	top: 40%;
 	margin: -16.5rem auto 20px;
 	background-color: #fff;
 	border-radius: 0.5rem;

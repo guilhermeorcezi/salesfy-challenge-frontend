@@ -27,4 +27,22 @@ body {
 	-webkit-font-smoothing: antialised !important;
 	background: #81259D;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 1%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #81259D;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFF;
+  border-radius: 2px;
+}
+
 `;
