@@ -11,8 +11,7 @@ export const MainWrapper = styled.main`
 `;
 
 export const PageTitle = styled.h1`
-	padding: 10px;
-	
+	padding: 20px;
 `;
 
 export const Container = styled.div`
@@ -28,11 +27,11 @@ export const Container = styled.div`
 	z-index: 2;
 	position: absolute;
 
-	h1{
+	h1 {
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		color:#81259d;
+		color: #81259d;
 	}
 `;
 

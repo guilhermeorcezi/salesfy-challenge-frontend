@@ -6,6 +6,7 @@ export enum WordsTypes{
 
 export interface Translate{
     translated:string
+    number:string
 }
 
 export interface TranslateState{

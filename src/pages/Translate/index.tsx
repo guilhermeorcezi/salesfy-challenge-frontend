@@ -10,6 +10,7 @@ import api from '../../services/api';
 import { toast } from 'react-toastify';
 interface Translate {
 	translated: string;
+	number: string;
 }
 
 const Translate: React.FC = () => {
@@ -17,6 +18,7 @@ const Translate: React.FC = () => {
 	const numbers = useSelector(
 		({ translate }: ApplicationState) => translate.data
 	);
+
 	const [amountTranslated, setAmountTranslated] = useState('');
 	const [newNumber, setNewNumber] = useState('');
 
@@ -70,7 +72,7 @@ const Translate: React.FC = () => {
 					{numbers.map((item, index) => (
 						<li key={index}>
 							<S.TextNumber styled={item.translated === amountTranslated}>
-								{item.translated.toLowerCase()}
+								{item.number} - {item.translated.toLowerCase()}
 							</S.TextNumber>
 						</li>
 					))}
