@@ -19,7 +19,7 @@ export function* translate({ payload }: Action) {
 		const res = yield call(api.get, `?translate=${payload.number}`);
 		yield put(add_number_translated_success(res.data));
 	} catch (err) {
-		toast.error('number need to be between 0 and 9999');
+		toast.error('Connection Error. Try again');
 		add_number_translated_failed();
 	}
 }

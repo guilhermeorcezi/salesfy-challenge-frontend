@@ -1,10 +1,25 @@
 import styled from 'styled-components';
 
+interface StyledNumbers {
+	readonly styled: Boolean;
+}
+
+export const MainWrapper = styled.main`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`;
+
+export const PageTitle = styled.h1`
+	padding: 10px;
+	
+`;
+
 export const Container = styled.div`
 	width: 100%;
-	max-width: 36rem;
+	max-width: 48rem;
 	top: 50%;
-	margin: -16.5rem auto 0;
+	margin: -16.5rem auto 20px;
 	background-color: #fff;
 	border-radius: 0.5rem;
 	padding-bottom: 30px;
@@ -12,16 +27,20 @@ export const Container = styled.div`
 	right: 0;
 	z-index: 2;
 	position: absolute;
+
+	h1{
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color:#81259d;
+	}
 `;
 
 export const Form = styled.form`
-	padding: 20px 25px;
+	padding: 0 25px 20px;
 	display: flex;
 	flex-direction: row;
-	img {
-		max-width: 40px;
-		margin-right: 20px;
-	}
+
 	input {
 		height: 40px;
 		width: 90%;
@@ -32,6 +51,7 @@ export const Form = styled.form`
 		padding: 0 15px;
 		color: #666;
 	}
+
 	button {
 		border: 0;
 		width: 40px;
@@ -45,34 +65,35 @@ export const Form = styled.form`
 		-webkit-box-align: center;
 		align-items: center;
 	}
+
 	button:hover {
 		background-color: #81259d;
 		transition: 0.2s ease-in;
 	}
 `;
 
+export const TextAmount = styled.h3`
+	padding-left: 10px;
+	clear: both;
+	text-weight: bold;
+	padding-top: 0;
+`;
+
 export const List = styled.ul`
 	list-style: none;
 	padding: 20px;
 
-	li,
-	h3 {
+	li {
+		margin-top: 10px;
+	}
+
+	li {
 		padding-left: 10px;
 		clear: both;
 	}
-
-	h3 {
-		text-weight: bold;
-        padding-top: 0;
-        margin-bottom:10px;
-	}
 `;
 
-export const Name = styled.a`
-	font-size: 32px;
-	flex-direction: column;
-	margin-bottom: 10px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #81259d;
+export const TextNumber = styled.span<StyledNumbers>`
+	line-height: 2em;
+	color: ${(props) => props.styled && '#81259d;'};
 `;
