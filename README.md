@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="./assets/number_translator.png" alt="Number Translator" width="700">
 <br>
-Clima Agora
+Number Translator
 </h1>
 
 <p align="center"> 🚀 A web application to translate int numbers into words</p>
